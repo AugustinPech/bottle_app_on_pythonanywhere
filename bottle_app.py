@@ -8,7 +8,7 @@ abs_views_path= os.path.join(os.getcwd(), 'views')
 
 @route('/')
 def hello_world():
-    return "static_file('index.html'root=)"
+    return "totototo"
 
 application = default_app()
 
