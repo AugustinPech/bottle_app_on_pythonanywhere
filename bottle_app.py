@@ -5,7 +5,7 @@ import caculator
 
 @route('/')
 def hello_world():
-    return static_file('index.html', root='./views/')
+    return static_file('index.html', root='./views')
 
 application = default_app()
 
