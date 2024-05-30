@@ -4,7 +4,7 @@
 from bottle import default_app, route, run, template, error, static_file
 import os
 
-abs_views_path= os.path.join(os.getcwd(), 'views')
+abs_views_path= os.path.join(os.getcwd(), 'views','')
 
 @route('/')
 def hello_world():
