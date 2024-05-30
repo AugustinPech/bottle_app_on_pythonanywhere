@@ -1,10 +1,14 @@
-
 # A very simple Bottle Hello World app for you to get started with...
-from bottle import default_app, route
+from bottle import default_app, route, run, template, error, static_file
+import os
+import caculator
 
 @route('/')
 def hello_world():
-    return 'Hello from Bottle!'
+    return 'Welcome to the JL\'s buddys!'
 
 application = default_app()
+
+if __name__ == "__main__":
+    run()
 
