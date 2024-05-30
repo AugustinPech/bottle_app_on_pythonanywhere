@@ -2,10 +2,10 @@
 from bottle import default_app, route, run, template, error, static_file
 import os
 import caculator
-
+views_dir = os.path.join(os.path.dirname(__file__), 'views')
 @route('/')
 def hello_world():
-    return static_file('index.html', root='./views')
+    return static_file('index.html', root=views_dir)
 
 application = default_app()
 
