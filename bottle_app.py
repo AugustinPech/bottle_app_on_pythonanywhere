@@ -4,11 +4,11 @@
 from bottle import default_app, route, run, template, error, static_file
 import os
 
-abs_views_path= os.path.join(os.getcwd(), 'views','')
+abs_views_path= os.path.join(os.getcwd(), 'views')
 
 @route('/')
 def hello_world():
-    return static_file('index.html', root='.')
+    return static_file('index.html', root=abs_views_path)
 
 application = default_app()
 
